@@ -1,7 +1,7 @@
 {
     "version": "independent",
     "npmClient": "yarn",
-    "packages": ["packages/*"],
+    "packages": ["packages/koenig-lexical"],
     "command": {
         "version": {
           "exact": true
