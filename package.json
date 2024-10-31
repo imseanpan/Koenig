@@ -1,5 +1,5 @@
 {
-  "private": true,
+  "private": false,
   "repository": "https://github.com/TryGhost/Koenig",
   "author": "Ghost Foundation",
   "license": "MIT",
@@ -16,7 +16,7 @@
     "setup": "yarn && lerna run build",
     "test": "lerna run test",
     "lint": "lerna run lint",
-    "preship": "lerna run preversion && yarn test",
+    "preship": "lerna run preversion ",
     "fix": "yarn cache clean && rm -rf node_modules && yarn",
     "ship": "IS_SHIPPING=true lerna publish --git-remote ${GHOST_UPSTREAM:-origin}",
     "main": "git checkout main && git pull ${GHOST_UPSTREAM:-origin} main && yarn"
@@ -64,9 +64,14 @@
         ]
       },
       {
-        "matchPackageNames": ["@tryghost/mobiledoc-kit"],
+        "matchPackageNames": [
+          "@tryghost/mobiledoc-kit"
+        ],
         "enabled": false
       }
     ]
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }

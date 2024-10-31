@@ -13,7 +13,7 @@
     },
     "local": {
         "public": "true",
-        "repo": "https://github.com/TryGhost/Koenig",
-        "scope": "@tryghost"
+        "repo": "https://github.com/imseanpan/Koenig",
+        "scope": "@imseanpan"
     }
 }
