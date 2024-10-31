@@ -9,11 +9,12 @@ import {
     $createParagraphNode,
     $getSelection,
     $isRangeSelection,
+
     FORMAT_TEXT_COMMAND
 } from 'lexical';
 import {$getNearestNodeOfType} from '@lexical/utils';
 import {$isListNode, ListNode} from '@lexical/list';
-import {$setBlocksType} from '@lexical/selection';
+import {$patchStyleText, $setBlocksType} from '@lexical/selection';
 import {HeadingNode, QuoteNode} from '@lexical/rich-text';
 import {
     ToolbarMenu,
@@ -43,8 +44,10 @@ const blockTypeToBlockName = {
 function quoteIcon(blockType = '') {
     if (blockType.endsWith?.('quote')) {
         return 'quoteOne';
+    // biome-ignore lint/style/noUselessElse: <explanation>
     } else if (blockType.endsWith?.('aside')) {
         return 'quoteTwo';
+    // biome-ignore lint/style/noUselessElse: <explanation>
     } else {
         return 'quote';
     }
@@ -63,12 +66,12 @@ export default function FormatToolbar({
     const [blockType, setBlockType] = React.useState('paragraph');
 
     let hideHeading = false;
-    if (!editor.hasNodes([HeadingNode])){
+    if (!editor.hasNodes([HeadingNode])) {
         hideHeading = true;
     }
 
     let hideQuotes = false;
-    if (!editor.hasNodes([QuoteNode])){
+    if (!editor.hasNodes([QuoteNode])) {
         hideQuotes = true;
     }
 
@@ -172,6 +175,18 @@ export default function FormatToolbar({
         });
     };
 
+    const updateColor = () => {
+        editor.update(() => {
+            const selection = $getSelection();
+            if ($isRangeSelection(selection)) {
+                $patchStyleText(selection,
+                    {
+                        color: 'rgb(204, 11, 11)'
+                    });
+            }
+        });
+    };
+
     return (
         <ToolbarMenu>
             <ToolbarMenuItem
@@ -238,6 +253,15 @@ export default function FormatToolbar({
                 label="Save as snippet"
                 onClick={onSnippetClick}
             />
+            <ToolbarMenuItem
+                data-kg-toolbar-button="snippet"
+                hide={hideSnippets}
+                icon="snippet"
+                isActive={false}
+                label="change color"
+                onClick={updateColor}
+            />
+
         </ToolbarMenu>
     );
 }

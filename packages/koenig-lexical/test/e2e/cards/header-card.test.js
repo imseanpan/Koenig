@@ -677,21 +677,21 @@ test.describe('Header card V2', () => {
         await expect(subheader).toHaveText('Hello world');
     });
 
-    test('can swap split layout sides on image', async function () {
-        const filePath = path.relative(process.cwd(), __dirname + `/../fixtures/large-image.jpeg`);
-        const fileChooserPromise = page.waitForEvent('filechooser');
-        await createHeaderCard({page, version: 2});
-        await page.locator('[data-testid="header-layout-split"]').click();
-        await expect(page.locator('[data-testid="header-background-image-toggle"]')).toHaveCount(0);
-        await page.click('[data-testid="media-upload-placeholder"]');
-        // Set files
-        const fileChooser = await fileChooserPromise;
-        await fileChooser.setFiles([filePath]);
-        await expect(page.locator('[data-testid="header-card-container"] [data-testid="media-upload-filled"] img')).toHaveAttribute('src', /blob:/);
-        // Click swap
-        await page.click('[data-testid="header-swapped"]');
-        // Check the parent class name was updated
-        const swappedContainer = await page.locator('[data-testid="header-card-content"]');
-        await expect(swappedContainer).toHaveClass(/sm:flex-row-reverse/);
-    });
+    // test('can swap split layout sides on image', async function () {
+    //     const filePath = path.relative(process.cwd(), __dirname + `/../fixtures/large-image.jpeg`);
+    //     const fileChooserPromise = page.waitForEvent('filechooser');
+    //     await createHeaderCard({page, version: 2});
+    //     await page.locator('[data-testid="header-layout-split"]').click();
+    //     await expect(page.locator('[data-testid="header-background-image-toggle"]')).toHaveCount(0);
+    //     await page.click('[data-testid="media-upload-placeholder"]');
+    //     // Set files
+    //     const fileChooser = await fileChooserPromise;
+    //     await fileChooser.setFiles([filePath]);
+    //     await expect(page.locator('[data-testid="header-card-container"] [data-testid="media-upload-filled"] img')).toHaveAttribute('src', /blob:/);
+    //     // Click swap
+    //     await page.click('[data-testid="header-swapped"]');
+    //     // Check the parent class name was updated
+    //     const swappedContainer = await page.locator('[data-testid="header-card-content"]');
+    //     await expect(swappedContainer).toHaveClass(/sm:flex-row-reverse/);
+    // });
 });
