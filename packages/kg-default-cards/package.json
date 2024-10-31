@@ -37,5 +37,6 @@
     "juice": "^10.0.0",
     "lodash": "^4.17.21",
     "luxon": "^3.5.0"
-  }
+  },
+  "gitHead": "1d1c6a232cead8e39f43bf923cbccfecd9a67150"
 }

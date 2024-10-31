@@ -2,6 +2,7 @@
   "name": "@imseanpan/kg-unsplash-selector",
   "version": "1.0.0",
   "license": "MIT",
+  "private": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/imseanpan/Koenig/tree/master/packages/kg-unsplash-selector"
@@ -56,5 +57,6 @@
     "vite-plugin-dts": "3.9.1",
     "vite-plugin-svgr": "4.2.0",
     "vitest": "1.6.0"
-  }
+  },
+  "gitHead": "1d1c6a232cead8e39f43bf923cbccfecd9a67150"
 }

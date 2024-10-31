@@ -43,5 +43,6 @@
   },
   "dependencies": {
     "@tryghost/kg-clean-basic-html": "4.1.4"
-  }
+  },
+  "gitHead": "1d1c6a232cead8e39f43bf923cbccfecd9a67150"
 }

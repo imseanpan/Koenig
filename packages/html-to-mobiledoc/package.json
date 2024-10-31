@@ -28,5 +28,6 @@
     "@tryghost/kg-parser-plugins": "4.1.4",
     "@tryghost/mobiledoc-kit": "^0.12.4-ghost.1",
     "jsdom": "^24.1.0"
-  }
+  },
+  "gitHead": "1d1c6a232cead8e39f43bf923cbccfecd9a67150"
 }
