@@ -1,6 +1,6 @@
 {
   "name": "@imseanpan/kg-parser-plugins",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "repository": "https://github.com/imseanpan/Koenig/tree/master/packages/kg-parser-plugins",
   "author": "Ghost Foundation",
   "license": "MIT",
