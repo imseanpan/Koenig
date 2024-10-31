@@ -1,7 +1,7 @@
 {
-  "name": "@tryghost/kg-default-atoms",
+  "name": "@imseanpan/kg-default-atoms",
   "version": "5.0.3",
-  "repository": "https://github.com/TryGhost/Koenig/tree/master/packages/kg-default-atoms",
+  "repository": "https://github.com/imseanpan/Koenig/tree/master/packages/kg-default-atoms",
   "author": "Ghost Foundation",
   "license": "MIT",
   "main": "index.js",

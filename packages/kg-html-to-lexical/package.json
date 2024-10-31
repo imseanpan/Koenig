@@ -1,7 +1,7 @@
 {
-  "name": "@tryghost/kg-html-to-lexical",
+  "name": "@imseanpan/kg-html-to-lexical",
   "version": "1.1.17",
-  "repository": "https://github.com/TryGhost/Koenig/tree/main/packages/kg-html-to-lexical",
+  "repository": "https://github.com/imseanpan/Koenig/tree/main/packages/kg-html-to-lexical",
   "author": "Ghost Foundation",
   "license": "MIT",
   "main": "build/index.js",

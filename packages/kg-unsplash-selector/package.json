@@ -1,10 +1,10 @@
 {
-  "name": "@tryghost/kg-unsplash-selector",
+  "name": "@imseanpan/kg-unsplash-selector",
   "version": "0.2.3",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TryGhost/Koenig/tree/master/packages/kg-unsplash-selector"
+    "url": "https://github.com/imseanpan/Koenig/tree/master/packages/kg-unsplash-selector"
   },
   "author": "Ghost Foundation",
   "files": [

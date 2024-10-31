@@ -1,7 +1,7 @@
 {
-  "name": "@tryghost/kg-card-factory",
+  "name": "@imseanpan/kg-card-factory",
   "version": "5.0.5",
-  "repository": "https://github.com/TryGhost/Koenig/tree/master/packages/kg-card-factory",
+  "repository": "https://github.com/imseanpan/Koenig/tree/master/packages/kg-card-factory",
   "author": "Ghost Foundation",
   "license": "MIT",
   "main": "index.js",

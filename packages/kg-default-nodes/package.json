@@ -1,7 +1,7 @@
 {
-  "name": "@tryghost/kg-default-nodes",
+  "name": "@imseanpan/kg-default-nodes",
   "version": "1.1.16",
-  "repository": "https://github.com/TryGhost/Koenig/tree/main/packages/kg-default-nodes",
+  "repository": "https://github.com/imseanpan/Koenig/tree/main/packages/kg-default-nodes",
   "author": "Ghost Foundation",
   "license": "MIT",
   "main": "cjs/kg-default-nodes.js",

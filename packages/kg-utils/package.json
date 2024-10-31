@@ -1,7 +1,7 @@
 {
-  "name": "@tryghost/kg-utils",
+  "name": "@imseanpan/kg-utils",
   "version": "1.0.28",
-  "repository": "https://github.com/TryGhost/Koenig/tree/main/packages/kg-utils",
+  "repository": "https://github.com/imseanpan/Koenig/tree/main/packages/kg-utils",
   "author": "imseanpan",
   "license": "MIT",
   "main": "index.js",

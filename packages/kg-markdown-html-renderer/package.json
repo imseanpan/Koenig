@@ -1,7 +1,7 @@
 {
-  "name": "@tryghost/kg-markdown-html-renderer",
+  "name": "@imseanpan/kg-markdown-html-renderer",
   "version": "7.0.7",
-  "repository": "https://github.com/TryGhost/Koenig/tree/master/packages/kg-markdown-html-renderer",
+  "repository": "https://github.com/imseanpan/Koenig/tree/master/packages/kg-markdown-html-renderer",
   "author": "Ghost Foundation",
   "license": "MIT",
   "main": "index.js",

@@ -1,7 +1,7 @@
 {
-  "name": "@tryghost/kg-default-transforms",
+  "name": "@imseanpan/kg-default-transforms",
   "version": "1.1.17",
-  "repository": "https://github.com/TryGhost/Koenig/tree/main/packages/kg-default-transforms",
+  "repository": "https://github.com/imseanpan/Koenig/tree/main/packages/kg-default-transforms",
   "author": "Ghost Foundation",
   "license": "MIT",
   "main": "build/index.js",
